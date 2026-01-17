@@ -2,40 +2,108 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>CV Administrator - PT Informatika Itenas Jaya Teknologi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri - Mohammad Zaky Alfarizy</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f0f2f5; }
-        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
-        h2 { color: #2980b9; margin-top: 25px; }
-        .info-list { list-style: none; padding: 0; }
-        .info-list li { margin-bottom: 10px; padding-left: 20px; position: relative; }
-        .info-list li:before { content: "✔"; position: absolute; left: 0; color: #27ae60; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #f8f9fa; color: #333; }
+        
+        /* Navbar */
+        nav { background-color: #00bcd4; padding: 15px 50px; display: flex; justify-content: space-between; align-items: center; color: white; }
+        nav .logo { font-weight: bold; font-size: 1.2rem; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; font-size: 0.9rem; cursor: pointer; }
+
+        /* Main Content */
+        .container { display: flex; max-width: 1200px; margin: 50px auto; padding: 0 20px; gap: 40px; }
+        
+        /* Left Side (Profile) */
+        .profile-side { flex: 1; text-align: center; }
+        .avatar { width: 150px; height: 150px; background-color: #ccc; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.8rem; }
+        .profile-side h2 { margin-bottom: 5px; color: #444; }
+        .profile-side p { color: #888; margin-bottom: 15px; }
+        .btn-email { background-color: #00bcd4; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; text-decoration: none; font-size: 0.8rem; }
+
+        /* Right Side (Details) */
+        .details-side { flex: 2; }
+        .card { background: white; border: 1px solid #ddd; margin-bottom: 25px; border-radius: 5px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .card-header { background-color: #00bcd4; color: white; padding: 10px 15px; font-weight: bold; }
+        .card-body { padding: 15px; line-height: 1.8; }
+        .card-body ul { margin-left: 20px; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 30px; color: #777; font-size: 0.8rem; border-top: 1px solid #ddd; margin-top: 50px; }
+        footer a { color: #00bcd4; text-decoration: none; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Curriculum Vitae</h1>
-        
-        <h2>Data Pribadi</h2>
-        <p><strong>Nama:</strong> Mohammad Zaky Alfarizy [cite: 102]</p>
-        
-        <h2>Pendidikan</h2>
-        <ul class="info-list">
-            <li>Sarjana (S1) - Teknik Informatika [cite: 103]</li>
-        </ul>
 
-        <h2>Keahlian</h2>
-        <ul class="info-list">
-            <li>Mancing (Keahlian Khusus) [cite: 104]</li>
-            <li>System Administration (openEuler Linux) [cite: 26, 31]</li>
-            <li>User & Group Management [cite: 54]</li>
-            <li>SSH Server Configuration [cite: 76]</li>
+    <nav>
+        <div class="logo">Biodata Diri</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Education</li>
+            <li>Contact</li>
         </ul>
+    </nav>
 
-        <h2>Kontak</h2>
-        <p><strong>Email:</strong> zaky.alfarizy@itenas.ac.id [cite: 105]</p>
-        <p><strong>Lokasi:</strong> Bandung, Indonesia [cite: 2]</p>
+    <div class="container">
+        <div class="profile-side">
+            <div class="avatar">150 x 150</div>
+            <h2>Mohammad Zaky Alfarizy</h2>
+            <p>Mahasiswa Informatika</p>
+            <a href="mailto:zaky.alfarizy@itenas.ac.id" class="btn-email">Email Me</a>
+        </div>
+
+        <div class="details-side">
+            <div class="card">
+                <div class="card-header">Biodata Diri</div>
+                <div class="card-body">
+                    <p><strong>Nama Lengkap:</strong> Mohammad Zaky Alfarizy</p>
+                    <p><strong>Tempat, Tanggal Lahir:</strong> Bandung, 1 Januari 2000</p>
+                    <p><strong>Alamat:</strong> Kampus Itenas, Bandung</p>
+                    <p><strong>Telepon:</strong> 08123456789</p>
+                    <p><strong>Email:</strong> zaky.alfarizy@itenas.ac.id</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Pendidikan</div>
+                <div class="card-body">
+                    <ul>
+                        <li><strong>S1 Teknik Informatika</strong> - Institut Teknologi Nasional (Sedang Menempuh)</li>
+                        <li><strong>SMA Negeri 1 Bandung</strong> (2018 - 2021)</li>
+                        <li><strong>SMP Negeri 1 Bandung</strong> (2015 - 2018)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Keahlian</div>
+                <div class="card-body">
+                    <ul>
+                        <li>Mancing (Keahlian Khusus)</li>
+                        <li>Linux System Administration (openEuler) [cite: 26, 31]</li>
+                        <li>User & Group Management [cite: 54]</li>
+                        <li>SSH & Web Server Configuration [cite: 76, 85]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Hobi</div>
+                <div class="card-body">
+                    <p>Mancing, Bersepeda, Coding, Belajar OS Linux</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>Kontak: <a href="mailto:zaky.alfarizy@itenas.ac.id">zaky.alfarizy@itenas.ac.id</a> | Telp: 08123456789</p>
+        <p>&copy; 2026 Biodata Diri</p>
+    </footer>
+
 </body>
 </html>
